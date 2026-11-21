@@ -66,6 +66,13 @@ export const profile = {
     "Full-stack developer and M.Tech student in Distributed & Mobile Computing at Jadavpur University — building and deploying web apps with React, Next.js, Node.js, TypeScript and MongoDB.",
 };
 
+/**
+ * Link used by every "Email" button. Opens Gmail's compose window in a new tab,
+ * which works in any browser — a plain mailto: link does nothing when the
+ * visitor has no email app set up.
+ */
+export const emailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(profile.email)}`;
+
 export const seo = {
   title: "Deep Kumar Sadhukhan — Full-Stack Developer",
   description: profile.tagline,

@@ -4,7 +4,7 @@ import { m, type Variants } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { FiArrowRight, FiFileText, FiGithub, FiLinkedin, FiMail, FiMapPin } from "react-icons/fi";
-import { profile } from "@/data/portfolio";
+import { emailLink, profile } from "@/data/portfolio";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -24,7 +24,7 @@ const photo: Variants = {
 const links = [
   { label: "GitHub", href: profile.github, Icon: FiGithub },
   { label: "LinkedIn", href: profile.linkedin, Icon: FiLinkedin },
-  { label: "Email", href: `mailto:${profile.email}`, Icon: FiMail },
+  { label: "Email", href: emailLink, Icon: FiMail },
 ];
 
 export function Hero() {

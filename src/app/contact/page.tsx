@@ -5,16 +5,16 @@ import { SocialIcons } from "@/components/footer";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion";
 import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
-import { pages, profile } from "@/data/portfolio";
+import { emailLink, pages, profile } from "@/data/portfolio";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: `Get in touch with ${profile.name} for collaborations, research, teaching or opportunities.`,
+  description: `Get in touch with ${profile.name} about job opportunities, collaborations or projects.`,
   alternates: { canonical: "/contact" },
 };
 
 const blocks = [
-  { label: "Email", value: profile.email, href: `mailto:${profile.email}`, Icon: FiMail },
+  { label: "Email", value: profile.email, href: emailLink, Icon: FiMail },
   { label: "Location", value: profile.shortLocation, Icon: FiMapPin },
   { label: "Languages", value: profile.languages.join(", "), Icon: FiGlobe },
   { label: "LinkedIn", value: profile.linkedinHandle, href: profile.linkedin, Icon: FiLinkedin },

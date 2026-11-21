@@ -4,7 +4,7 @@ import { AnimatePresence, m } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { navLinks, profile } from "@/data/portfolio";
+import { emailLink, navLinks, profile } from "@/data/portfolio";
 import { useScrollFrame } from "@/lib/hooks";
 import { Monogram } from "./monogram";
 import { ThemeToggle } from "./theme-toggle";
@@ -206,7 +206,7 @@ export function Navbar() {
                 <span className="sr-only">(opens PDF in a new tab)</span>
               </a>
               <p className="mt-auto text-sm text-muted">
-                <a href={`mailto:${profile.email}`} className="break-all underline-offset-4 hover:text-accent hover:underline">
+                <a href={emailLink} target="_blank" rel="noopener noreferrer" className="break-all underline-offset-4 hover:text-accent hover:underline">
                   {profile.email}
                 </a>
               </p>
