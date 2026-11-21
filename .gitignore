@@ -39,6 +39,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# resume PDF (contains phone number and date of birth) — kept out of the public repo
-/public/assets/*.pdf
