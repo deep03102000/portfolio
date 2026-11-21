@@ -1,6 +1,10 @@
 # Deep Kumar Sadhukhan — Portfolio
 
+**Live:** https://deep-sadhukhan-portfolio.vercel.app
+
 Next.js 16 (App Router) · TypeScript · Tailwind CSS v4 · framer-motion (LazyMotion) · next-themes · react-icons
+
+Deployed on Vercel — every push to `main` redeploys the live site automatically.
 
 ## Run locally
 
